@@ -9,19 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ahouzi</groupId>
-    <artifactId>inventory-service</artifactId>
+    <artifactId>ms-banque</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>inventory-service</name>
-    <description>Demo project for Spring Boot</description>
+    <name>ms-banque</name>
+    <description>project for consuming web services in spring boot</description>
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>2020.0.4</spring-cloud.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -32,11 +27,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-jersey</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -61,33 +56,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.openapitools.swagger/swagger-maven-plugin -->
-            <dependency>
-                <groupId>io.openapitools.swagger</groupId>
-                <artifactId>swagger-maven-plugin</artifactId>
-                <version>2.1.6</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-spring-boot-starter</artifactId>
-                <version>12.0.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-security</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -105,6 +73,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

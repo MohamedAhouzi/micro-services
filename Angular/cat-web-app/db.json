@@ -13,7 +13,7 @@
       "name": "Printer",
       "price": 6500,
       "quantity": 8,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -31,30 +31,6 @@
       "selected": true,
       "available": true,
       "id": 4
-    },
-    {
-      "id": 5,
-      "name": "dddddd",
-      "price": 0,
-      "quantity": 22,
-      "selected": true,
-      "available": true
-    },
-    {
-      "id": 6,
-      "name": "zzzzzz",
-      "price": 0,
-      "quantity": 22,
-      "selected": true,
-      "available": true
-    },
-    {
-      "id": 7,
-      "name": "hhhhhh",
-      "price": 22,
-      "quantity": 0,
-      "selected": true,
-      "available": true
     }
   ]
 }
